@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="">
+        <div id="name">
+            First Name: <textarea rows="1" cols="20" required placeholder="John" name="firstName"></textarea> 
+            Last Name: <textarea rows="1" cols="20" required placeholder="Smith" name="lastName"></textarea> 
+        </div>
+        <div id="gender">
+                <label for="male">Male:</label>
+                <input name="gender" type="radio" id="male" value="male" required >
+    
+                <label for="female">Female:</label>
+                <input name="gender" type="radio" id="female" value="female" required>
+
+                <label for="other">Other:</label>
+                <input name="gender" type="radio" id="other" value="other" required>
+        </div>
+
+        <div id ="EmailPassword">
+            Email:<input id="email" type="email" required placeholder="example@email.com">
+            Password:<input id="password" type="password" minlength="5" maxlength="10" required>
+        </div>
+
+        <div id ="Birthday">
+            Birthday: 
+            <select name="month" required>
+                <option value="month" disabled selected>month</option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+            </select>
+            
+            <select name="day" required>
+                <option value="day" disabled selected>day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            
+            <select name="year" required>
+                <option value="year" disabled selected>year</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+            </select>
+
+
+        </div>
+
+        <div id ="tos">
+            I agree to the terms and conditions <input type="checkbox" required>
+        </div>
+
+        <div id="submit">
+            <button>Submit</button>
+        </div>
+
+        <div class="Footer">
+                <h1><a href="../index.html">Back to Home</a></h1>
+        </div>
+    </form>
+</body>
+</html>
